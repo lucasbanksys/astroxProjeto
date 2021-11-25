@@ -36,7 +36,7 @@
 }
 
 .items:hover {
-  color: #e60012;
+  color: black;
   cursor: pointer;
   transition: all 200ms ease;
 }
