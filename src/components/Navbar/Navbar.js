@@ -17,15 +17,6 @@ export default function Navbar() {
       <div className="navbar__links">
         <ul className="navbar__links__list">
           <li>
-            <a
-              className="items"
-              href="https://pt-americas-support.nintendo.com/"
-            >
-              <FaRegQuestionCircle />
-              <span className="text">Suporte</span>
-            </a>
-          </li>
-          <li>
             <a className="items" href="/wishlist">
               <FaHeart />
               <span className="text">Lista de Desejos</span>

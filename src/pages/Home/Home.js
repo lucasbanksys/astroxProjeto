@@ -25,11 +25,6 @@ export default function Home() {
 
   return (
     <div className="home">
-      <Slider
-        id="08014b08-6cbc-4c49-b5b9-1886fd44c2ac"
-        classificationNumber="L"
-        classificationText="Livre para qualquer idade"
-      />
       <Search />
       <Container title="Destaques">
         {games.map((game) => (
