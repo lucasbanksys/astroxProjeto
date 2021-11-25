@@ -25,7 +25,7 @@ export default function Login() {
 
   return (
     <div className="login">
-      <h2 className="login-title">Conta Nintendo</h2>
+      <h2 className="login-title">Conta AstroX</h2>
       <div className="login-container">
         <form className="login-form" onSubmit={handleSubmit}>
           <input
@@ -51,7 +51,7 @@ export default function Login() {
         <div className="login-create">
           <span>Ainda não possui uma conta?</span>
           <a className="btn-create" href="/register">
-            Criar uma conta Nintendo
+            Criar uma nova conta
           </a>
         </div>
       </div>

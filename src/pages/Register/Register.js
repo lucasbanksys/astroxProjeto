@@ -1,16 +1,15 @@
-import './Register.css';
-import { useState } from 'react';
-import axios from 'axios';
+import "./Register.css";
+import { useState } from "react";
+import axios from "axios";
 
 export default function Register() {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [nickname, setNickname] = useState("");
+  const [password, setPassword] = useState("");
+  const [passwordConfirmation, setPasswordConfirmation] = useState("");
 
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [nickname, setNickname] = useState('');
-  const [password, setPassword] = useState('');
-  const [passwordConfirmation, setPasswordConfirmation] = useState('');
-
-  const handleSubmit = event => {
+  const handleSubmit = (event) => {
     event.preventDefault();
 
     const user = {
@@ -18,44 +17,67 @@ export default function Register() {
       email: email,
       nickname: nickname,
       password: password,
-      passwordConfirmation: passwordConfirmation
-    }
+      passwordConfirmation: passwordConfirmation,
+    };
 
-    axios.post('user/register', user)
-    .then(response => console.log(response))
-  }
+    axios.post("user/register", user).then((response) => console.log(response));
+  };
 
-  return(
-    <div className='register'>
-      <div className='register-container'>
+  return (
+    <div className="register">
+      <div className="register-container">
         <h2>Criar uma conta Nintendo</h2>
 
-        <form className='register-form' onSubmit={handleSubmit}>
+        <form className="register-form" onSubmit={handleSubmit}>
           <label>Nome</label>
-          <input type='text' required onChange={event => setName(event.target.value)}/>
+          <input
+            type="text"
+            required
+            onChange={(event) => setName(event.target.value)}
+          />
 
           <label>Nickname</label>
-          <input type='text' required onChange={event => setNickname(event.target.value)}/>
+          <input
+            type="text"
+            required
+            onChange={(event) => setNickname(event.target.value)}
+          />
 
           <label>Endereço de e-mail</label>
-          <input type='email' required onChange={event => setEmail(event.target.value)}/>
+          <input
+            type="email"
+            required
+            onChange={(event) => setEmail(event.target.value)}
+          />
 
           <label>Senha</label>
-          <input type='password' required onChange={event => setPassword(event.target.value)}/>
+          <input
+            type="password"
+            required
+            onChange={(event) => setPassword(event.target.value)}
+          />
 
           <label>Confirmar senha</label>
-          <input type='password' required onChange={event => setPasswordConfirmation(event.target.value)}/>
+          <input
+            type="password"
+            required
+            onChange={(event) => setPasswordConfirmation(event.target.value)}
+          />
 
-          <div className='terms'>
-            <input type='checkbox' placeholder='wedewdwed' required />
-            <label>Eu concordo com os termos do <a href='https://accounts.nintendo.com/term/eula/BR'>Acordo de usuário da conta Nintendo</a> e confirmo que li a <a href='https://accounts.nintendo.com/term/privacy_policy/BR'>Política de privacidade da Nintendo</a>.</label>
+          <div className="terms">
+            <input type="checkbox" placeholder="wedewdwed" required />
+            <label>
+              Eu concordo com os termos do{" "}
+              <a href="#">Acordo de usuário da conta Nintendo</a> e confirmo que
+              li a <a href="#">Política de privacidade da AstroX</a>.
+            </label>
           </div>
-          
-          <div className='register-btn'>
-            <input type='submit' value='Continuar' />
+
+          <div className="register-btn">
+            <input type="submit" value="Continuar" />
           </div>
         </form>
       </div>
     </div>
-  )
+  );
 }
