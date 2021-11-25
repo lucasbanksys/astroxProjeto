@@ -26,7 +26,7 @@ export default function Home() {
   return (
     <div className="home">
       <Search />
-      <Container title="Destaques">
+      <Container title="EM ALTA">
         {games.map((game) => (
           <Card
             id={game.id}

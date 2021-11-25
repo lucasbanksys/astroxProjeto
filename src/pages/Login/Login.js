@@ -19,7 +19,7 @@ export default function Login() {
     axios.post("/auth/login", login).then((response) => {
       const token = response.data.token;
       localStorage.setItem("token", token);
-      navigate("/");
+      navigate("/profile");
     });
   };
 
