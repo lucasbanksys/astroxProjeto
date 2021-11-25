@@ -1,13 +1,13 @@
 .navbar {
   color: #484848;
-  border-bottom: 1px solid #DADADA;
+  border-bottom: 1px solid #dadada;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
 .navbar__logo {
-  background-color: #e60012;
+  background-color: white;
   padding: 1.2rem 0;
 }
 
