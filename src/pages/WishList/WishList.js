@@ -26,7 +26,7 @@ export default function WishList() {
   }, [mounted]);
 
   return (
-    <Container title="Lista de Desejos">
+    <Container title="Jogos preferidos">
       {wishList.map((game) => (
         <Card
           id={game.id}

@@ -13,7 +13,7 @@
 .game-like {
   font-size: 1.5em;
   text-decoration: none;
-  color: #e60012;
+  color: #13b4f0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -22,7 +22,7 @@
 .game-wish a {
   font-size: 1.5em;
   text-decoration: none;
-  color: #e60012;
+  color: #13b4f0;
   padding: 0 0 0 1rem;
 }
 
@@ -36,5 +36,5 @@
   padding: 0 6rem;
   text-align: justify;
   font-size: 1.2em;
-  color: #e60012;
+  color: #13b4f0;
 }
