@@ -6,6 +6,7 @@ import {
   FaRegUser,
   FaUserPlus,
   FaGamepad,
+  FaHome,
 } from "react-icons/fa";
 
 export default function Navbar() {
@@ -17,9 +18,15 @@ export default function Navbar() {
       <div className="navbar__links">
         <ul className="navbar__links__list">
           <li>
+            <a className="items" href="/">
+              <FaHome />
+              <span className="text">Home</span>
+            </a>
+          </li>
+          <li>
             <a className="items" href="/wishlist">
               <FaHeart />
-              <span className="text">Lista de Desejos</span>
+              <span className="text">Jogos preferidos</span>
             </a>
           </li>
           <li>

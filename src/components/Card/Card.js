@@ -1,5 +1,5 @@
 import "./Card.css";
-import { FaRegHeart } from "react-icons/fa";
+import { BiLike } from "react-icons/bi";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 
@@ -31,7 +31,7 @@ export default function Card(props) {
       </div>
 
       <button className="wishlist" onClick={wishGame}>
-        <FaRegHeart />
+        <BiLike />
       </button>
     </div>
   );

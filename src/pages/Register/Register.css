@@ -66,5 +66,6 @@
 }
 
 .register-btn input:hover {
-  background-color: #b1b1b173;
+  background-color: #13b4f0;
+  color: white;
 }

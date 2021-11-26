@@ -24,12 +24,12 @@
 }
 
 .wishlist {
-  color: #e60013;
+  color: #13b4f0;
   font-size: 1.4em;
   padding: 0.5rem 0;
   display: flex;
   border: none;
-  background-color: #fff;
+  background-color: white;
 }
 
 .wishlist:hover {

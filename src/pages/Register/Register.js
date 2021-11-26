@@ -26,7 +26,7 @@ export default function Register() {
   return (
     <div className="register">
       <div className="register-container">
-        <h2>Criar uma conta Nintendo</h2>
+        <h2>Criar uma nova conta</h2>
 
         <form className="register-form" onSubmit={handleSubmit}>
           <label>Nome</label>
@@ -68,7 +68,7 @@ export default function Register() {
             <input type="checkbox" placeholder="wedewdwed" required />
             <label>
               Eu concordo com os termos do{" "}
-              <a href="#">Acordo de usuário da conta Nintendo</a> e confirmo que
+              <a href="#">Acordo de usuário da conta AstroX</a> e confirmo que
               li a <a href="#">Política de privacidade da AstroX</a>.
             </label>
           </div>
