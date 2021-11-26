@@ -1,4 +1,4 @@
 # astroxProjeto
 
-Resultado final no [Heroku]([AstroX - Games WhishList (astrox-front.herokuapp.com)](https://astrox-front.herokuapp.com/))
+Resultado final no ([AstroX - Games WhishList (astrox-front.herokuapp.com)](https://astrox-front.herokuapp.com/))
 
