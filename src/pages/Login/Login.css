@@ -44,10 +44,12 @@
 
 .login-ok a:hover {
   text-decoration: underline;
+  background-color: #13b4f0;
+  color: white;
 }
 
 .login-ok > input {
-  background-color: #b1b1b1;
+  background-color: #13b4f0;
   border: none;
   padding: 0.6rem 1.5rem;
   border-radius: 1rem;
@@ -79,5 +81,11 @@
 }
 
 .btn-create:hover {
-  background-color: #b1b1b1;
+  background-color: #13b4f0;
+  color: white;
+}
+
+.fazer-login {
+  background-color: #13b4f0;
+  color: white;
 }

@@ -1,12 +1,11 @@
 import "./Navbar.css";
 import logo from "./logo.png";
 import {
-  FaHeart,
-  FaRegQuestionCircle,
   FaRegUser,
   FaUserPlus,
   FaGamepad,
   FaHome,
+  FaThumbsUp,
 } from "react-icons/fa";
 
 export default function Navbar() {
@@ -25,7 +24,7 @@ export default function Navbar() {
           </li>
           <li>
             <a className="items" href="/wishlist">
-              <FaHeart />
+              <FaThumbsUp />
               <span className="text">Jogos preferidos</span>
             </a>
           </li>

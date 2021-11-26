@@ -1,5 +1,5 @@
 import "./Game.css";
-import { FaRegHeart } from "react-icons/fa";
+import { BiLike } from "react-icons/bi";
 import { useLocation } from "react-router-dom";
 import { useState, useEffect } from "react";
 import axios from "axios";
@@ -36,7 +36,7 @@ export default function Game() {
         <div className="game-like">
           <span>R$ {game.price}</span>
           <a href="/wishlist">
-            <FaRegHeart />
+            <BiLike />
           </a>
         </div>
       </div>

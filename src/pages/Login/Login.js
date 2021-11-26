@@ -45,7 +45,7 @@ export default function Login() {
             <a href="!#">
               <span>Esqueceu sua senha?</span>
             </a>
-            <input type="submit" value="Fazer login" />
+            <input className="fazer-login" type="submit" value="Fazer login" />
           </div>
         </form>
         <div className="login-create">
