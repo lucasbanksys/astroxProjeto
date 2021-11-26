@@ -16,11 +16,18 @@ export default function Login() {
       password: password,
     };
 
-    axios.post("/auth/login", login).then((response) => {
-      const token = response.data.token;
-      localStorage.setItem("token", token);
-      navigate("/profile");
-    });
+    axios
+      .post("/auth/login", login)
+      .then((response) => {
+        const token = response.data.token;
+        localStorage.setItem("token", token);
+        navigate("/profile");
+      })
+      .catch((err) => {
+        console.log(err);
+        console.log({ message: "usuário ou senha não encontrados" });
+        alert("Usuário ou senha inválidos");
+      });
   };
 
   return (
