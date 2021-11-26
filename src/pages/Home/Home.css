@@ -1,4 +1,5 @@
 .home {
   overflow: hidden;
   color: #0e7ba3;
+  background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
 }

@@ -1,5 +1,10 @@
 .search {
-  background-color: #13b4f0;
+  background: radial-gradient(
+    circle,
+    rgba(0, 212, 255, 1) 66%,
+    rgba(14, 123, 163, 1) 93%
+  );
+  /* background-color: #13b4f0; */
   padding: 4rem 1rem;
   display: flex;
   align-items: center;
